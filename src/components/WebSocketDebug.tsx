@@ -1,0 +1,1 @@
+// This file has been removed as we're now using realistic market data instead of WebSocket connections
