@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Update this to your production absolute URL
+Sitemap: /sitemap.xml
+
+
