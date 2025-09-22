@@ -9,7 +9,7 @@ import * as Recharts from "recharts@2.15.2";
 
 export function LiveStats() {
   const [isVisible, setIsVisible] = useState(false);
-  const { marketData, isLoading, marketCapSource } = useMarketData() as any;
+  const { marketData, isLoading, marketCapSource, priceHistory } = useMarketData() as any;
 
   useEffect(() => {
     const timer = setTimeout(() => setIsVisible(true), 500);
@@ -26,7 +26,7 @@ export function LiveStats() {
     }
   };
 
-  const stats = [
+  const stats = useMemo(() => [
     {
       icon: TrendingUp,
       label: marketCapSource === 'fdv' ? "FDV (fallback)" : "Market Cap",
@@ -57,12 +57,14 @@ export function LiveStats() {
       color: "text-orange-600",
       bgColor: "bg-orange-100",
     },
-  ];
+  ], [marketData.marketCapUsd, marketData.recentTrades, marketData.volume24hUsd, marketCapSource]);
 
-  const availableStats = stats.filter((s) => typeof s.value === 'number' && s.value > 0);
+  const availableStats = useMemo(() => 
+    stats.filter((s) => typeof s.value === 'number' && s.value > 0), 
+    [stats]
+  );
 
   // Sparkline data from context history
-  const { priceHistory } = useMarketData();
   const sparkData = useMemo(() => {
     return priceHistory.map((p) => ({ time: p.t, price: p.priceUsd }));
   }, [priceHistory]);

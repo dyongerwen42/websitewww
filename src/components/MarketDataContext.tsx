@@ -143,7 +143,7 @@ export function MarketDataProvider({ children }: { children: ReactNode }) {
           const isQuoteSol = pair?.quoteToken?.symbol === 'SOL' || pair?.quoteToken?.address === 'So11111111111111111111111111111111111111112';
           const isBaseSol = pair?.baseToken?.symbol === 'SOL' || pair?.baseToken?.address === 'So11111111111111111111111111111111111111112';
 
-          const currentSolPrice = solPrice > 0 ? solPrice : marketData.solPriceUsd;
+          const currentSolPrice = solPrice > 0 ? solPrice : 0;
 
           let baseUsd = 0;
           let quoteUsd = 0;
@@ -172,7 +172,7 @@ export function MarketDataProvider({ children }: { children: ReactNode }) {
         const recentTrades: number = ((pair?.txns?.h24?.buys ?? 0) + (pair?.txns?.h24?.sells ?? 0));
         const priceUsd: number = pair?.priceUsd ? Number(pair.priceUsd) : 0;
 
-        const currentSolPrice = solPrice > 0 ? solPrice : marketData.solPriceUsd;
+        const currentSolPrice = solPrice > 0 ? solPrice : 0;
         const liquiditySol = currentSolPrice > 0 ? liquidityUsd / currentSolPrice : 0;
         const marketCapSol = currentSolPrice > 0 ? marketCapUsd / currentSolPrice : 0;
         const volume24hSol = currentSolPrice > 0 ? volume24hUsd / currentSolPrice : 0;
@@ -216,10 +216,36 @@ export function MarketDataProvider({ children }: { children: ReactNode }) {
       isMounted = false;
       clearInterval(interval);
     };
+  }, [TOKEN_MINT, MARKET_CAP_MODE]);
+
+  // Update SOL-based calculations when SOL price changes (without re-fetching DexScreener)
+  useEffect(() => {
+    if (solPrice > 0) {
+      setMarketData(prev => {
+        const newMarketCapSol = prev.marketCapUsd / solPrice;
+        const newLiquiditySol = prev.liquidityUsd / solPrice;
+        const newVolume24hSol = prev.volume24hUsd / solPrice;
+        
+        // Only update if values actually changed to prevent unnecessary re-renders
+        if (Math.abs(newMarketCapSol - prev.marketCapSol) < 0.001 && 
+            Math.abs(newLiquiditySol - prev.liquidity) < 0.001 &&
+            Math.abs(newVolume24hSol - prev.volume24h) < 0.001) {
+          return prev;
+        }
+        
+        return {
+          ...prev,
+          marketCapSol: newMarketCapSol,
+          liquidity: newLiquiditySol,
+          volume24h: newVolume24hSol,
+          solPriceUsd: solPrice
+        };
+      });
+    }
   }, [solPrice]);
 
   return (
-    <MarketDataContext.Provider value={{ marketData, isLoading, priceHistory }}>
+    <MarketDataContext.Provider value={{ marketData, isLoading, priceHistory, marketCapSource }}>
       {children}
     </MarketDataContext.Provider>
   );
