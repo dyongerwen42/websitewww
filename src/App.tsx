@@ -9,6 +9,7 @@ import { HowToBuy } from "./components/HowToBuy";
 import { Footer } from "./components/Footer";
 import { MarketDataProvider } from "./components/MarketDataContext";
 import { Whitepaper } from "./components/Whitepaper";
+import { ImpactMetrics } from "./components/ImpactMetrics";
 
 export default function App() {
   return (
@@ -18,6 +19,9 @@ export default function App() {
         <main>
           <Hero />
           <About />
+          <section id="impact">
+            <ImpactMetrics />
+          </section>
           <section id="stats">
             <LiveStats />
           </section>
@@ -31,7 +35,9 @@ export default function App() {
           <section id="community">
             <CommunityTestimonials />
           </section>
-          <HowToBuy />
+          <section id="buy">
+            <HowToBuy />
+          </section>
         </main>
         <Footer />
       </div>

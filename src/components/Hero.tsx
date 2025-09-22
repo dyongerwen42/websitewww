@@ -117,6 +117,27 @@ export function Hero() {
                 Powering humanitarian aid through community and transparency. 
                 <strong className="text-green-600"> 50%+ of creator rewards</strong> fund disaster relief, hunger prevention, and homelessness support.
               </motion.p>
+              
+              {/* Mission Highlights */}
+              <motion.div 
+                className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 }}
+              >
+                <div className="flex items-center space-x-2 text-sm">
+                  <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                  <span className="text-muted-foreground">Disaster Relief</span>
+                </div>
+                <div className="flex items-center space-x-2 text-sm">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                  <span className="text-muted-foreground">Hunger Prevention</span>
+                </div>
+                <div className="flex items-center space-x-2 text-sm">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                  <span className="text-muted-foreground">Homelessness Support</span>
+                </div>
+              </motion.div>
             </div>
 
             {/* Stats (live-only) */}
