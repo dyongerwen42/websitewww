@@ -5,23 +5,23 @@ export function About() {
   const features = [
     {
       icon: Heart,
-      title: "Real Impact",
-      description: "Every transaction directly contributes to feeding the homeless, supporting veterans, and disaster relief efforts."
+      title: "Creator Rewards Impact",
+      description: "50%+ of token creator rewards are allocated to the Give Back Fund, ensuring continuous support for global causes."
     },
     {
       icon: Shield,
-      title: "Transparent Mission",
-      description: "Fully doxxed team with clear milestones and public accountability for all charitable activities."
+      title: "Blockchain Transparency",
+      description: "All wallets including donation wallet and reserve are public and verifiable on-chain. Every transaction is visible."
     },
     {
       icon: Users,
-      title: "Community Driven",
-      description: "Built by the community, for the community. Every holder becomes part of our charitable mission."
+      title: "Community Governance",
+      description: "Token holders vote on which nonprofits and projects to support, ensuring the community drives impact."
     },
     {
       icon: Target,
-      title: "Clear Goals",
-      description: "Specific market cap milestones unlock car giveaways to veterans and expanded food programs."
+      title: "Immediate & Long-Term Aid",
+      description: "Emergency disaster relief, food drives, hunger prevention, and shelter building for long-term homeless support."
     }
   ];
 
@@ -31,11 +31,11 @@ export function About() {
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Turning Digital Value Into <span className="text-green-600">Human Kindness</span>
+            Powering Humanitarian Aid Through <span className="text-green-600">Community & Transparency</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            GiveBack Coin isn't just another cryptocurrency. It's a movement that transforms 
-            every transaction into an opportunity to help those in need.
+            Give Back Coin $GBACK transforms how the world funds relief and humanitarian aid. 
+            By combining blockchain transparency, community power, and sustainable funding through creator rewards.
           </p>
         </div>
 
@@ -45,26 +45,25 @@ export function About() {
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
               <p className="text-lg text-muted-foreground mb-6">
-                We believe that cryptocurrency can be a force for good. Through GiveBack Coin, 
-                we're building a community that uses the power of decentralized finance to 
-                create tangible, positive change in the world.
+                To create a transparent, community-driven financial ecosystem that turns every transaction 
+                into meaningful support for disaster relief, hunger prevention, and homelessness initiatives.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-600 rounded-full"></div>
-                  <span>Food drives for homeless communities</span>
+                  <span>Emergency disaster relief</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-600 rounded-full"></div>
-                  <span>Disaster relief support</span>
+                  <span>Food drives and hunger prevention</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-600 rounded-full"></div>
-                  <span>Vehicle donations to veterans</span>
+                  <span>Shelter building and homeless support</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-green-600 rounded-full"></div>
-                  <span>Community outreach programs</span>
+                  <span>Community-driven governance</span>
                 </div>
               </div>
             </div>

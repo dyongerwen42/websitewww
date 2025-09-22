@@ -67,7 +67,7 @@ export function Hero() {
                 whileHover={{ scale: 1.05 }}
               >
                 <Heart className="w-4 h-4 mr-2 animate-pulse" />
-                Community-Driven Impact
+                $GBACK — Humanitarian Aid Through Community
                 <Sparkles className="w-4 h-4 ml-2" />
               </motion.div>
               
@@ -92,7 +92,7 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                Digital Value,{" "}
+                Give Back Coin{" "}
                 <motion.span 
                   className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600"
                   animate={{
@@ -104,7 +104,7 @@ export function Hero() {
                     ease: "easeInOut",
                   }}
                 >
-                  Human Kindness
+                  $GBACK
                 </motion.span>
               </motion.h1>
               
@@ -114,9 +114,8 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
               >
-                GiveBack Coin is a revolutionary community-driven cryptocurrency designed to create 
-                <strong className="text-green-600"> real impact</strong>. 
-                Every transaction helps fund food drives, disaster relief, and support for those in need.
+                Powering humanitarian aid through community and transparency. 
+                <strong className="text-green-600"> 50%+ of creator rewards</strong> fund disaster relief, hunger prevention, and homelessness support.
               </motion.p>
             </div>
 
@@ -194,7 +193,7 @@ export function Hero() {
                     />
                     <span className="relative z-10 flex items-center">
                       <Zap className="w-5 h-5 mr-2" />
-                      Buy GiveBack Coin
+                      Buy $GBACK
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </span>
                   </a>
@@ -245,6 +244,7 @@ export function Hero() {
                 <code className="text-sm font-mono text-green-400 break-all bg-gray-800/50 p-2 rounded border block">
                   Fh7mLxtPAysdvHcMcJ37A3vc6WvBVh7JVDwxmwk6pump
                 </code>
+                <p className="text-xs text-gray-400 mt-2">✓ $GBACK Token • ✓ 1B Total Supply • ✓ 50%+ Creator Rewards to Humanitarian Fund</p>
                 <p className="text-xs text-gray-400 mt-2">✓ Verified on Solana • ✓ Liquidity Locked</p>
               </div>
             </motion.div>

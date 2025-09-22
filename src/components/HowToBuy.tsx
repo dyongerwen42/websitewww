@@ -38,9 +38,9 @@ export function HowToBuy() {
     },
     {
       number: "4",
-      title: "Find GiveBack Coin",
+      title: "Find $GBACK",
       description: "Search for our contract address or use the direct link",
-      action: "Buy GiveBack",
+      action: "Buy $GBACK",
       link: "https://pump.fun/coin/Fh7mLxtPAysdvHcMcJ37A3vc6WvBVh7JVDwxmwk6pump"
     }
   ];
@@ -51,11 +51,11 @@ export function HowToBuy() {
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            How to <span className="text-green-600">Buy GiveBack Coin</span>
+            How to <span className="text-green-600">Buy $GBACK</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Join our community and start making a difference with every transaction. 
-            Here's how to get started in just a few simple steps.
+            $GBACK powers humanitarian aid through 50%+ creator rewards to the Give Back Fund.
           </p>
         </div>
 
@@ -116,10 +116,10 @@ export function HowToBuy() {
 
         {/* Quick Buy Section */}
         <div className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 md:p-12 text-center text-white">
-          <h3 className="text-2xl font-bold mb-4">Ready to Make a Difference?</h3>
+          <h3 className="text-2xl font-bold mb-4">Ready to Power Humanitarian Aid?</h3>
           <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
-            Every purchase helps fund our charitable activities. Join thousands of holders 
-            who are turning their investments into real-world impact.
+            Every $GBACK purchase contributes to disaster relief, hunger prevention, and homelessness support. 
+            Join our community-driven movement where 50%+ of creator rewards fund global causes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -151,7 +151,7 @@ export function HowToBuy() {
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground max-w-3xl mx-auto">
             <strong>Disclaimer:</strong> Cryptocurrency investments carry risk. Only invest what you can afford to lose. 
-            GiveBack Coin is a community project focused on charitable giving. Past performance does not guarantee future results.
+            Give Back Coin $GBACK is a community project focused on humanitarian aid through creator rewards. Past performance does not guarantee future results.
           </p>
         </div>
       </div>

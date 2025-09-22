@@ -10,11 +10,11 @@ export function Team() {
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Meet Our <span className="text-green-600">Doxxed Team</span>
+            Meet Our <span className="text-green-600">Community Leaders</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Transparency is at the heart of our mission. Our team is fully doxxed 
-            and committed to creating real impact in the community.
+            Transparency is at the heart of $GBACK. Our team is committed to powering humanitarian aid 
+            through blockchain transparency and community-driven governance.
           </p>
         </div>
 
@@ -47,8 +47,8 @@ export function Team() {
                     </div>
                     <p className="text-muted-foreground">
                       Aaron is a successful real estate professional and entrepreneur who has 
-                      decided to use his expertise and resources to create positive change 
-                      through cryptocurrency and community action.
+                      decided to use his expertise and resources to power humanitarian aid 
+                      through $GBACK's transparent, community-driven approach to blockchain philanthropy.
                     </p>
                   </div>
 
@@ -75,8 +75,8 @@ export function Team() {
                   <div className="bg-muted/50 rounded-lg p-4">
                     <blockquote className="text-sm italic text-muted-foreground">
                       "I've been blessed with success in real estate, and now I want to use 
-                      that platform to help others. GiveBack Coin isn't just about crypto—it's 
-                      about turning digital success into real-world impact for people who need it most."
+                      that platform to power humanitarian aid. $GBACK isn't just about crypto—it's 
+                      about combining blockchain transparency with community governance to create sustainable impact for disaster relief, hunger prevention, and homelessness support."
                     </blockquote>
                     <cite className="text-sm font-medium text-foreground mt-2 block">
                       — Aaron Remer
@@ -85,10 +85,10 @@ export function Team() {
 
                   {/* Commitment */}
                   <div className="border-l-4 border-green-600 pl-4">
-                    <h5 className="font-semibold text-foreground mb-2">Personal Commitment:</h5>
+                    <h5 className="font-semibold text-foreground mb-2">$GBACK Commitment:</h5>
                     <p className="text-sm text-muted-foreground">
-                      Aaron has committed to giving away his personal Tesla at the 5M market cap 
-                      milestone, demonstrating his dedication to the cause over personal gain.
+                      Aaron leads the $GBACK mission to ensure 50%+ of creator rewards fund humanitarian causes, 
+                      with transparent on-chain governance and public donation wallets for maximum accountability.
                     </p>
                   </div>
                 </div>
@@ -116,9 +116,9 @@ export function Team() {
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-6 h-6 text-green-600" />
               </div>
-              <h4 className="font-bold text-foreground mb-2">Community Driven</h4>
+              <h4 className="font-bold text-foreground mb-2">Community Governance</h4>
               <p className="text-sm text-muted-foreground">
-                All decisions are made transparently with community input and accountability
+                $GBACK holders vote on which nonprofits and projects to support, ensuring community-driven impact
               </p>
             </CardContent>
           </Card>
@@ -128,9 +128,9 @@ export function Team() {
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ExternalLink className="w-6 h-6 text-green-600" />
               </div>
-              <h4 className="font-bold text-foreground mb-2">Live Streaming</h4>
+              <h4 className="font-bold text-foreground mb-2">Blockchain Transparency</h4>
               <p className="text-sm text-muted-foreground">
-                Regular live streams showing real charitable activities and community engagement
+                All $GBACK wallets including donation and reserve funds are public and verifiable on-chain
               </p>
             </CardContent>
           </Card>

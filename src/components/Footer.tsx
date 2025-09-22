@@ -17,6 +17,7 @@ export function Footer() {
 
   const quickLinks = [
     { name: "About", href: "#about" },
+    { name: "Whitepaper", href: "#whitepaper" },
     { name: "Roadmap", href: "#roadmap" },
     { name: "Team", href: "#team" },
     { name: "How to Buy", href: "#buy" }
@@ -32,12 +33,12 @@ export function Footer() {
               <img src={givebackLogo} alt="GiveBack Coin" className="h-10 w-auto brightness-0 invert" />
             </div>
             <p className="text-muted max-w-md">
-              GiveBack Coin is a community-driven cryptocurrency designed to create real impact. 
-              Every transaction helps fund food drives, disaster relief, and support for those in need.
+              Give Back Coin $GBACK powers humanitarian aid through community and transparency. 
+              50%+ of creator rewards fund disaster relief, hunger prevention, and homelessness support.
             </p>
             <div className="flex items-center space-x-2 text-sm">
               <Heart className="w-4 h-4 text-red-400" />
-              <span className="text-muted">Turning digital value into human kindness</span>
+              <span className="text-muted">Powering humanitarian aid through blockchain transparency</span>
             </div>
           </div>
 
@@ -89,8 +90,9 @@ export function Footer() {
                 </code>
               </div>
               <div className="text-sm text-muted">
-                <p>Built on Solana</p>
-                <p>Community Driven</p>
+                <p>$GBACK Token</p>
+                <p>1B Total Supply</p>
+                <p>50%+ Creator Rewards to Humanitarian Fund</p>
               </div>
             </div>
           </div>
@@ -99,7 +101,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-8 pt-8 border-t border-muted/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <p className="text-sm text-muted">
-            © 2024 GiveBack Coin. Community-driven charitable cryptocurrency.
+            © 2024 Give Back Coin $GBACK. Powering humanitarian aid through community and transparency.
           </p>
           <p className="text-sm text-muted">
             Made with ❤️ for those in need
