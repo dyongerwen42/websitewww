@@ -5,7 +5,7 @@ import givebackLogo from "figma:asset/00a6b2f019c79970e333581332d4ae51e66725fe.p
 import { ParticleBackground } from "./ParticleBackground";
 import { AnimatedCounter } from "./AnimatedCounter";
 import { useMarketData } from "./MarketDataContext";
-import headerVideo from "../assets/header video.mp4";
+import headerVideo from "../assets/new video.mp4";
 
 export function Hero() {
   const { marketData, isLoading } = useMarketData();
@@ -330,7 +330,7 @@ export function Hero() {
               <div className="text-center">
                 <p className="text-sm text-muted-foreground">People Helped</p>
                 <p className="text-xl font-bold text-green-600">
-                  <AnimatedCounter end={156} suffix="+" />
+                  <AnimatedCounter end={700} suffix="+" />
                 </p>
               </div>
             </motion.div>

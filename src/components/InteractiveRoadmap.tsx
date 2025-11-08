@@ -20,7 +20,7 @@ export function InteractiveRoadmap() {
       achievements: [
         { text: "Community Discord Server", completed: true },
         { text: "First Food Drive Event", completed: true },
-        { text: "100+ People Fed", completed: true },
+        { text: "100+ People Helped", completed: true },
         { text: "Media Coverage", completed: false },
       ],
       impact: "156 people helped so far",

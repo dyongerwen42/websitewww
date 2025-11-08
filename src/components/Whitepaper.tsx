@@ -377,7 +377,7 @@ export function Whitepaper() {
                       <Heart className="w-10 h-10 text-orange-600" />
                     </div>
                     <div className="text-5xl font-bold text-orange-600 mb-2">700+</div>
-                    <div className="text-xl font-semibold text-foreground mb-2">People Fed</div>
+                    <div className="text-xl font-semibold text-foreground mb-2">People Helped</div>
                     <p className="text-muted-foreground">Meals delivered to families in need through our food truck partnerships</p>
                   </div>
                   
