@@ -10,6 +10,7 @@ import { Footer } from "./components/Footer";
 import { MarketDataProvider } from "./components/MarketDataContext";
 import { Whitepaper } from "./components/Whitepaper";
 import { ImpactMetrics } from "./components/ImpactMetrics";
+import { CommunityUpdates } from "./components/CommunityUpdates";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
           <About />
           <section id="impact">
             <ImpactMetrics />
+          </section>
+          <section id="updates">
+            <CommunityUpdates />
           </section>
           <section id="stats">
             <LiveStats />

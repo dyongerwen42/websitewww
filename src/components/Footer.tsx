@@ -4,9 +4,19 @@ import givebackLogo from "figma:asset/00a6b2f019c79970e333581332d4ae51e66725fe.p
 export function Footer() {
   const socialLinks = [
     {
-      name: "Twitter",
-      href: "https://x.com/givebackcoin?s=21&t=nQKv8nhZ8V_v1W_YNTY9_w",
+      name: "X (Twitter)",
+      href: "https://x.com/gbackcoin",
       icon: Twitter
+    },
+    {
+      name: "X Community",
+      href: "https://x.com/i/communities/1969153030462586977",
+      icon: Twitter
+    },
+    {
+      name: "Linktree",
+      href: "https://linktr.ee/givebackcoin",
+      icon: ExternalLink
     },
     {
       name: "Pump.fun",
@@ -102,7 +112,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-8 pt-8 border-t border-muted/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <p className="text-sm text-muted">
-            © 2024 Give Back Coin $GBACK. Powering humanitarian aid through community and transparency.
+            © 2025 GIVEBACK ($GBACK). Powering humanitarian aid through community and transparency.
           </p>
           <p className="text-sm text-muted">
             Made with ❤️ for those in need

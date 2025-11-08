@@ -95,9 +95,9 @@ export function Header() {
                 className="border-green-600 text-green-600 hover:bg-green-50"
                 asChild
               >
-                <a href="https://x.com/givebackcoin?s=21&t=nQKv8nhZ8V_v1W_YNTY9_w" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/gbackcoin" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="w-4 h-4 mr-2" />
-                  Twitter
+                  X
                 </a>
               </Button>
             </motion.div>
@@ -214,9 +214,9 @@ export function Header() {
                       className="w-full border-green-600 text-green-600 hover:bg-green-50"
                       asChild
                     >
-                      <a href="https://x.com/givebackcoin?s=21&t=nQKv8nhZ8V_v1W_YNTY9_w" target="_blank" rel="noopener noreferrer">
+                      <a href="https://x.com/gbackcoin" target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-2" />
-                        Follow on Twitter
+                        Follow on X
                       </a>
                     </Button>
                   </motion.div>
